@@ -1,0 +1,55 @@
+.card-wrapper {
+  width: 150px;
+  padding: 7px;
+  margin: 5px 7px;
+  
+}
+
+@mixin card {
+  border-radius: 0.7em;
+
+  .title {
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: rgb(61, 61, 61);
+    color: #fff;
+    padding: 7px;
+  }
+  .subtitle {
+    padding: 7px;
+  }
+  .footer {
+    padding: 7px;
+    text-align: center;
+
+    >:not(:first-child) {
+        margin-left: 12px;
+    }
+
+    >* {
+      cursor: pointer;
+    }
+  }
+}
+
+.completed-card {
+  @include card;
+  background-color: rgb(59, 59, 59);
+}
+
+.section1-card {
+  @include card;
+  background-color: rgb(255, 134, 134);
+}
+.section2-card {
+  @include card;
+  background-color: rgb(134, 255, 130);
+}
+.section3-card {
+  @include card;
+  background-color: rgb(253, 255, 157);
+}
+.section4-card {
+  @include card;
+  background-color: rgb(202, 202, 202);
+}

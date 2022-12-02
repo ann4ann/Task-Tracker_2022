@@ -1,0 +1,89 @@
+.header {
+  position: sticky;
+  top: 0;
+  height: 8vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px 5px;
+  background-color: rgb(53, 53, 53);
+  font-size: 1rem;
+  
+  &__menu {
+    display: flex;
+    align-items: center;
+
+    > :not(:first-child) {
+      margin-left: 30px;
+    }
+  }
+  
+  &__authorization {
+  }
+}
+
+.logo{
+  color: white;
+  font-size: 1.6em;
+  font-weight: bold;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+
+  > li {
+    display: inline-block;
+    width: 120px;
+
+    > a {
+      background-color: rgb(213, 224, 223);
+      display: block;
+      font-size: 1rem;
+      padding: 7px 12px;
+      border-radius: 0.7em;
+      color: #000;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-align: center;
+      transition: background-color ease-in-out 0.4s;
+
+      &:hover {
+        background-color: rgb(216, 199, 219);
+        color: rgb(106, 148, 143);
+        font-weight: bold;
+      }
+    }
+  }
+
+  > li + li {
+    padding-left: 15px;
+  }
+  // или
+  // > :not(:first-child) {
+  //   padding-left: 15px;
+  // }
+}
+
+.authorization {
+  background-color: rgb(192, 205, 214);
+  border-radius: 0.7em;
+  transition: transform ease-in-out 0.4s;
+
+  &__link {
+    > button {
+      cursor: pointer;
+      font-size: 1rem;
+      padding: 10px 15px;
+      border: none;
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+
+  &:hover {
+    transform: translateY(4px);
+  }
+}

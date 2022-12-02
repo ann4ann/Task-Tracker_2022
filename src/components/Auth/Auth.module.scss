@@ -1,0 +1,60 @@
+.form {
+  width: 35%;
+  min-width: 300px;
+  max-width: 450px;
+  margin: 0 auto;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-wrapper {
+  margin-bottom: 17px;
+  width: 100%;
+
+  > label {
+    margin-bottom: 7px;
+    display: block;
+  }
+
+  &__control {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 20px;
+    background: 0 0;
+  }
+}
+
+.button-submit {
+  padding: 12px 20px;
+  border: none;
+  margin: 20px 0 5px;
+  cursor: pointer;
+  background-color: #181728;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 0.7em;
+  transition: transform ease-in-out 0.2s;
+
+  &:hover {
+    background-color: #6a948f;
+    transform: scale(1.02) translateY(-2px);
+  }
+}
+
+// !!!!!!!! СДЕЛАТЬ VARIABLE
+.button-change {
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  color: rgb(87, 87, 87);
+  background: #00000000;
+
+  &:hover {
+    color: #000000;
+  }
+}

@@ -1,0 +1,122 @@
+.form {
+  width: 35%;
+  min-width: 300px;
+  max-width: 450px;
+  margin: 0 auto;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-wrapper {
+  margin-bottom: 17px;
+  width: 100%;
+
+  > label {
+    margin-bottom: 7px;
+    display: block;
+  }
+
+  &__control {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 20px;
+    background: 0 0;
+
+    // > option {
+    //   width: 100px;
+    // }
+  }
+
+  &__control-area {
+    resize: vertical;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    width: 100%;
+    height: 52px;
+    padding: 10px 20px;
+    border-radius: 0.7em;
+    background: 0 0;
+  }
+}
+
+.checkbox-wrapper {
+  margin-bottom: 17px;
+  width: 100%;
+}
+.chechbox-field {
+  display: none;
+
+  &:checked + .checkbox-label {
+    background-color: green;
+    transition: background-color 0.5s ease-out;
+    font-weight: bold;
+
+    &:hover {
+      background-color: darkgreen;
+    }
+  }
+}
+.checkbox-label {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  background-color: #c8d1d0;
+  border-radius: 20px;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  transition: 0.2s ease;
+
+  &:hover {
+    background-color: #a9b1b0;
+  }
+}
+
+.btn {
+  background-color: white;
+  border-radius: 0.7em;
+  padding: 7px 15px;
+  transition: background-color ease-in-out 0.4s;
+  color: #000;
+  margin: 7px;
+
+  > button {
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: inherit;
+  }
+
+  &:hover {
+    background-color: #c8d1d0;
+  }
+}
+
+.button-submit {
+  padding: 12px 20px;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+  background-color: #181728;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 0.7em;
+  transition: transform ease-in-out 0.2s;
+
+  &:hover {
+    background-color: #6a948f;
+    transform: scale(1.02) translateY(-2px);
+  }
+
+  & + & {
+    margin-left: 10px;
+  }
+}
